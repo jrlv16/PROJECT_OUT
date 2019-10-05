@@ -1,0 +1,32 @@
+#iemepres{
+    min-width: 30%;
+    margin-bottom: 1%;
+}
+
+.card-img-top{
+    width: 100%;
+}
+
+body{
+    background-image: url('nature-fond.jpg'); 
+    background-attachment: fixed;
+    
+
+   }
+
+.titre-section{
+    color: white;
+}
+
+header{
+    position: webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1030;
+}
+
+.main_menu{
+    border: white solid 3px;
+    color: white;
+}
+

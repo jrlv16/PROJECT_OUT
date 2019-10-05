@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Les bonzaïs d'Armel
+{% endblock title %}
+
+{% block title_header %}
+    Les bonzaïs d'Armel
+{% endblock title_header %}
+
+{% block container_1 %}
+<h4 class="titre-section"> Première présentation </h4>
+    <div class="card-columns">
+        {% for b in bonzai_list %}
+            <div class="card">
+                <img class="card-img-top" src="{{ b.img_arbre.url }}" alt="{{ b.nom }}" >
+                <div class="card-body ">
+                    <h4 class="card-title text-center">{{ b.nom }} </h4>
+                    <p class="card-text text-center">{{ b.age}} ans {{ b.taille }}m </p>
+                    <div class="text-center">
+                    <a href="#" class="btn btn-success">Voir la description</a>
+                    </div>
+                </div>
+            </div>    
+        {% endfor %}
+    </div>
+{% endblock container_1 %}
+
+{% block container_2 %}
+<h4 class="titre-section"> Deuxième présentation </h4>
+    <div class="card-deck">
+        {% for b in bonzai_list %}
+            <div class="card" id="iemepres">
+                <img class="card-img-top" src="{{ b.img_arbre.url }}" alt="{{ b.nom }} ">
+                <div class="card-body">
+                    <h4 class="card-title text-center">{{ b.nom }} </h4>
+                    <p class="card-text text-center">{{ b.age}} ans {{ b.taille }}m </p>
+                    <div class="text-center">
+                    <a href="#" class="btn btn-success">Voir la description</a>
+                    </div>
+                </div>
+            </div>    
+        {% endfor %}
+    </div>
+{% endblock container_2 %}
