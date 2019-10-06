@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    # path('contact', views.contact, name='contact'),
-    path('', views.index),
-    # path('<str:pagename>', views.index, name = 'index'),
+    path('', views.index, name="accueil"),
+    path('bonzai/<int:pk>', views.BonzaiDetailView.as_view(), name = 'detail_bonzai'),
+    path('bonzai_cat/<str:typarbre>', views.BonzaiListView.as_view(), name= 'bonzai_par_type')
     ]

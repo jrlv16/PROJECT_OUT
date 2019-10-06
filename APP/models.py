@@ -28,10 +28,7 @@ class Bonzai(models.Model):
     provenance = models.CharField(max_length=20)
     img_arbre = models.ImageField(null = True, blank = True, upload_to='logo')
 
-    def bonzai(self):
-        return self.Page()
-
-    
     def __str__(self): 
-        return '{} {}'.format(self.nom, self.type_arbre)    
-        
+        return '{} {}'.format(self.nom, self.type_arbre)
+
+           

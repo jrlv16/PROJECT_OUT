@@ -30,3 +30,27 @@ header{
     color: white;
 }
 
+.iconne, .enlettre {
+    color: #989ba0;
+    
+}
+
+a.enlettre:hover, a.iconne:hover {
+    text-decoration: none;
+    color:#bcc0c8;
+    
+}
+
+.iconne{
+    display: none;
+}
+
+@media (max-width: 767px){
+    .enlettre{
+        display: none;
+    }
+
+    .iconne{
+        display: block;
+    }
+}
