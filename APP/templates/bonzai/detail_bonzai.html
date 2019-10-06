@@ -3,9 +3,18 @@
 
 
 {% block title %}
-    Les bonzais d'Armel{{ object.nom }}
+    Les bonzais d'Armel  {{ object.nom }}
 {% endblock title %}
 
 {% block title_header %}
     {{ object.nom }} {{ object.type_arbre }}
 {% endblock title_header %}
+
+{% block container_1 %}
+    <div class="detail-b">
+        <h4 class="title-detail">{{ object.nom }}</h4>
+        <img src="{{ object.img_arbre.url }}" alt="{{ object.nom }}" class="pictdetail"></img>
+        <h5> Description:</h5>
+        {% lorem 4 b random %}
+    </div>
+{% endblock container_1 %}

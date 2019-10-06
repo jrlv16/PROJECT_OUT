@@ -10,8 +10,8 @@
 body{
     background-image: url('nature-fond.jpg'); 
     background-attachment: fixed;
-    
-
+   
+ 
    }
 
 .titre-section{
@@ -30,6 +30,16 @@ header{
     color: white;
 }
 
+.detail-b{
+    margin: 10%;
+    text-align: center;
+
+}
+
+.title-detail{
+    color: white;
+}
+
 .iconne, .enlettre {
     color: #989ba0;
     
@@ -45,6 +55,8 @@ a.enlettre:hover, a.iconne:hover {
     display: none;
 }
 
+
+
 @media (max-width: 767px){
     .enlettre{
         display: none;
@@ -52,5 +64,15 @@ a.enlettre:hover, a.iconne:hover {
 
     .iconne{
         display: block;
+    }
+
+    .card-columns{
+        column-count:2;
+    }
+}
+
+@media (max-width: 480px){
+    .card-columns{
+        column-count:1;
     }
 }
