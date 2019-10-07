@@ -55,6 +55,13 @@ a.enlettre:hover, a.iconne:hover {
     display: none;
 }
 
+.pictdetail{
+    max-width: 90%; 
+}
+
+p.text-center{
+    color: #bcc0c8;
+}
 
 
 @media (max-width: 767px){
