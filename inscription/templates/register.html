@@ -1,0 +1,30 @@
+{% extends 'base.html' %} 
+
+
+	
+{% block container_1 %}
+
+	<div >
+		
+			<h3 class="thin text-center">Créer un compte</h3>
+			<p class="text-center text-muted">J'ai déjà un compte, je me <a href="/connexion">connecte</a></p>
+	
+		<div class="container">
+			<form method="post" class="text-center">
+				{% csrf_token %}
+				{{ form.as_p }} 
+				<div class="text-center">
+					<label class="checkbox">
+					<input type="checkbox"> 
+						J'ai lu les  <a href="page_terms.html">Termes et conditions</a>
+				</div>
+				<div class="text-center">
+					<button class="btn btn-action" type="submit">Valider</button>
+				</div>
+			</form>
+		</div>
+	</div>					
+	
+
+{% endblock container_1 %}
+	

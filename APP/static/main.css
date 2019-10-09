@@ -63,6 +63,13 @@ p.text-center{
     color: #bcc0c8;
 }
 
+.navbar-expand-md {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
 
 @media (max-width: 767px){
     .enlettre{
@@ -77,6 +84,7 @@ p.text-center{
         column-count:2;
     }
 }
+
 
 @media (max-width: 480px){
     .card-columns{
