@@ -70,6 +70,15 @@ p.text-center{
             justify-content: space-between;
 }
 
+.formulaire{
+    background: lightgray;
+    opacity: 0.75;
+    padding :1%;
+    margin: 2% 0;
+}
+.formulaire li{
+    list-style: none
+}
 
 @media (max-width: 767px){
     .enlettre{
