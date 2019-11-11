@@ -12,3 +12,10 @@ PROJECT/__pycache__/settings.cpython-37.pyc
 PROJECT/__pycache__/__init__.cpython-37.pyc
 PROJECT/__pycache__/urls.cpython-37.pyc
 PROJECT/__pycache__/wsgi.cpython-37.pyc
+inscription/migrations/__pycache__/__init__.cpython-37.pyc
+inscription/__pycache__/__init__.cpython-37.pyc
+inscription/__pycache__/admin.cpython-37.pyc
+inscription/__pycache__/forms.cpython-37.pyc
+inscription/__pycache__/models.cpython-37.pyc
+inscription/__pycache__/urls.cpython-37.pyc
+inscription/__pycache__/views.cpython-37.pyc

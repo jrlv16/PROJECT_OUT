@@ -1,6 +1,4 @@
 {% extends 'base.html' %}
-{% load static %}
-
 
 {% block title %}
     Les bonzaïs d'Armel
@@ -20,7 +18,7 @@
                     <h4 class="card-title text-center">{{ b.nom }} </h4>
                     <p class="card-text text-center">{{ b.age}} ans {{ b.taille }}m </p>
                     <div class="text-center">
-                    <a href="#" class="btn btn-success">Voir la description</a>
+                    <a href="{% url 'detail_bonzai' b.id %}" class="btn btn-success">Voir la description</a>
                     </div>
                 </div>
             </div>    

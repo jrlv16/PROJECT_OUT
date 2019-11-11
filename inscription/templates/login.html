@@ -1,0 +1,30 @@
+{% extends 'base.html' %} 
+
+
+	
+
+
+{% block container_1 %}
+
+	<div >
+		
+			<h3 class="thin text-center">Connexion à mon compte</h3>
+			<p class="text-center text-muted">Pas encore inscrit ? <a href="/enregistrement">Créer un compte</a></p>
+	
+		<div class="container">
+			<form method="post" class="text-center">
+				{% csrf_token %}
+				{{ form.as_p }} 
+				<div class="text-center">
+					<b><a href="">mot de passe oublié ?</a></b>
+				</div>
+				<div class="text-center">
+					<button class="btn btn-action" type="submit">Connexion</button>
+				</div>
+			</form>
+		</div>
+	</div>					
+	
+
+{% endblock container_1 %}
+	
