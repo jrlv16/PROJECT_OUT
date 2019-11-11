@@ -9,14 +9,6 @@ from django.contrib.auth import login, authenticate,logout
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 
-
-
-
-# Create your views here.
-
-
-
-
 def register(request):
 
     form = RegisterForm(request.POST or None)
@@ -25,6 +17,7 @@ def register(request):
         password = form.cleaned_data.get("password")
         email = form.cleaned_data.get("email")
 
+        # on crée une instance de la classe User de django
         newUser = User(username =username, email= email)
         newUser.set_password(password)
 

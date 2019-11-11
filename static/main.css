@@ -1,0 +1,102 @@
+#iemepres{
+    min-width: 30%;
+    margin-bottom: 1%;
+}
+
+.card-img-top{
+    width: 100%;
+}
+
+body{
+    background-image: url('nature-fond.jpg'); 
+    background-attachment: fixed;
+   
+ 
+   }
+
+.titre-section{
+    color: white;
+}
+
+header{
+    position: webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1030;
+}
+
+.main_menu{
+    border: white solid 3px;
+    color: white;
+}
+
+.detail-b{
+    margin: 10%;
+    text-align: center;
+
+}
+
+.title-detail{
+    color: white;
+}
+
+.iconne, .enlettre {
+    color: #989ba0;
+    
+}
+
+a.enlettre:hover, a.iconne:hover {
+    text-decoration: none;
+    color:#bcc0c8;
+    
+}
+
+.iconne{
+    display: none;
+}
+
+.pictdetail{
+    max-width: 90%; 
+}
+
+p.text-center{
+    color: #bcc0c8;
+}
+
+.navbar-expand-md {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.formulaire{
+    background: lightgray;
+    opacity: 0.75;
+    padding :1%;
+    margin: 2% 0;
+}
+.formulaire li{
+    list-style: none
+}
+
+@media (max-width: 767px){
+    .enlettre{
+        display: none;
+    }
+
+    .iconne{
+        display: block;
+    }
+
+    .card-columns{
+        column-count:2;
+    }
+}
+
+
+@media (max-width: 480px){
+    .card-columns{
+        column-count:1;
+    }
+}

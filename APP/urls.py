@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from .views import BonzaiListView
 
 urlpatterns = [
     path('', views.index, name="accueil"),

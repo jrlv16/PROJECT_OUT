@@ -14,7 +14,16 @@ class BonzaiDetailView(DetailView):
     model = Bonzai
     template_name ='bonzai/detail_bonzai.html'
 
+def BonzaiDetail(request, bonzai_id):
+    bonzai = get_object_or_404(Bonzai, pk=bonzai_id)
+    return render(request, 'bonzai/detail_bonzai.html', {'object':bonzai})
+
 class BonzaiListView(ListView):
     template_name = 'bonzai/bonzai.html'
+            
     def get_queryset(self):
-        return Bonzai.objects.filter(type_arbre= self.kwargs.get('typarbre')) 
+        type_arbre = self.kwargs.get('typarbre')
+        if type_arbre:
+            return Bonzai.objects.filter(type_arbre=type_arbre) 
+        else:
+            return Bonzai.objects.all() 
