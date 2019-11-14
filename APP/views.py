@@ -6,9 +6,9 @@ from .models import Bonzai
 # Create your views here.
 # une méthode créée comme une fonction
 
-def index(request):
-    context = {'bonzai_list' : Bonzai.objects.all(),}               
-    return render(request, 'bonzai/bonzai.html', context)
+# def index(request):
+#     context = {'bonzai_list' : Bonzai.objects.all(),}               
+#     return render(request, 'bonzai/bonzai.html', context)
 
 class BonzaiDetailView(DetailView):
     model = Bonzai
@@ -26,4 +26,4 @@ class BonzaiListView(ListView):
         if type_arbre:
             return Bonzai.objects.filter(type_arbre=type_arbre) 
         else:
-            return Bonzai.objects.all() 
+            return Bonzai.objects.all()

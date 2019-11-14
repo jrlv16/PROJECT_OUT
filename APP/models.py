@@ -11,7 +11,6 @@ class Bonzai(models.Model):
     taille = models.DecimalField(max_digits=3, decimal_places=2)
     pays_origine = models.CharField(max_length=15, blank=False, null=False)
      
-    ENTR =[]
     FEUILLU_CADUQUE = 'FEUIL-CADU'
     FEUILLU_PERSISTANT = 'FEUIL-PERS'
     CONIFERE_PERSISTANT = 'CONIF-PERS'
