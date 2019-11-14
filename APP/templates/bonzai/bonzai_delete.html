@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+Suppression Bonzaï
+{% endblock %}
+{% block title_header %}
+Suppression d'un bonzaï
+{% endblock title_header %}
+{% block container_1 %}
+<form class="text-center" method="post">
+  {% csrf_token %}
+  Etes-vous sur de vouloir supprimer {{ bonzai.nom }}?
+  <input type="submit" name="" value="submit">
+</form>
+{% endblock %}
