@@ -1,4 +1,3 @@
-# Create your views here.
 from django.conf import settings
 from django.shortcuts import render, redirect
 
@@ -19,6 +18,7 @@ def register(request):
 
         # on crée une instance de la classe User de django
         newUser = User(username =username, email= email)
+        # on crée le mot de passe pour newUser
         newUser.set_password(password)
 
         newUser.save()

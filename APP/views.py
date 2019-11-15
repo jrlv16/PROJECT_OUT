@@ -27,3 +27,4 @@ class BonzaiListView(ListView):
             return Bonzai.objects.filter(type_arbre=type_arbre) 
         else:
             return Bonzai.objects.all() 
+            
