@@ -20,11 +20,11 @@ class Bonzai(models.Model):
     FEUILLU_CADUQUE = 'FEUIL-CADU'
     FEUILLU_PERSISTANT = 'FEUIL-PERS'
     CONIFERE_PERSISTANT = 'CONIF-PERS'
-    TYPE_ARBRE_CHOICES =(
-        (FEUILLU_CADUQUE, 'FEUILLU_CADUQUE'),
-        (FEUILLU_PERSISTANT, 'FEUILLU_PERSISTANT'),
-        (CONIFERE_PERSISTANT, 'CONIFERE_PERSISTANT')
-        )
+    TYPE_ARBRE_CHOICES =[
+        (FEUILLU_CADUQUE, 'FEUILLU CADUQUE'),
+        (FEUILLU_PERSISTANT, 'FEUILLU PERSISTANT'),
+        (CONIFERE_PERSISTANT, 'CONIFERE PERSISTANT')
+        ]
         
     type_arbre = models.CharField(max_length=10,
         choices = TYPE_ARBRE_CHOICES,
@@ -38,6 +38,19 @@ class Bonzai(models.Model):
 
     def __str__(self): 
         return '{} {}'.format(self.nom, self.type_arbre)
+    
+    @classmethod
+    def BonzaiSearchList(cls):
+        l = cls.TYPE_ARBRE_CHOICES
+        ltype =[]
+        typedict={}    
+        for t in l:
+            typedict[t[0]] = t[1]
+            ltype.append(typedict)
+            typedict={}
+        
+        extra = {'ltreetype': ltype}
+        return extra
 
 
 
