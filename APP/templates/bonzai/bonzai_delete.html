@@ -6,9 +6,11 @@ Suppression Bonzaï
 Suppression d'un bonzaï
 {% endblock title_header %}
 {% block container_1 %}
-<form class="text-center" method="post">
-  {% csrf_token %}
-  Etes-vous sur de vouloir supprimer {{ bonzai.nom }}?
-  <input type="submit" name="" value="submit">
-</form>
+<div class="container text-center" id= "delete_group">
+  <form class="form-group" method="post">
+    {% csrf_token %}
+    <p>Etes-vous sur de vouloir supprimer {{ bonzai.nom }}?</p>
+    <input type="submit" name="" value="submit" class="btn btn-danger">
+  </form>
+</div>
 {% endblock %}
