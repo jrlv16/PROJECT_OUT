@@ -80,6 +80,20 @@ p.text-center{
     list-style: none
 }
 
+.container{
+    margin: auto;
+    padding: 10px;
+}
+
+#delete_group, #insert_group{
+    background-color: white;
+    opacity: 0.85;
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+    width:fit-content;
+}
+
 @media (max-width: 767px){
     .enlettre{
         display: none;

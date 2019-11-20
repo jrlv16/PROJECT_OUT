@@ -13,6 +13,9 @@
         <h4 class="title-detail">{{ object.nom }}</h4>
         <img src="{{ object.img_arbre.url }}" alt="{{ object.nom }}" class="pictdetail"></img>
         <h5> Description:</h5>
+        <p> {{object.nom}} est à arbre à feuilles {{ object.type_feuille.name }}</p>
+        <a href ="{% url 'bonzai_update' object.id%} "><i class="fas fa-user-edit"></i></a>
+        <a href ="{% url "bonzai_delete" object.id%} "><i class="far fa-trash-alt"></i></a>
         <p class="text-center">{% lorem 4 b random %}</p>
     </div>
 {% endblock container_1 %}

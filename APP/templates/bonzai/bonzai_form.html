@@ -6,9 +6,11 @@ Création d'un bonzaï
 Création d'un bonzaï
 {% endblock title_header %}
 {% block container_1 %}
-<form class="text-center" method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <input type="submit" name="" value="submit">
-</form>
+<div class="container text-center" id="insert_group">
+  <form class="form-group" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" name="" value="submit" class="btn btn-success">
+  </form>
+</div>
 {% endblock container_1 %}
