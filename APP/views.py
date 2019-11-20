@@ -3,7 +3,7 @@ from django.views.generic.detail import DetailView
 from django.views.generic import ListView
 from .models import Bonzai
 from .forms import BonzaiForm
-from locale import str
+
 
 # Create your views here.
 # une méthode créée comme une fonction
